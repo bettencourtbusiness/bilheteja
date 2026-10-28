@@ -274,5 +274,6 @@ export default function Home() {
     </main>
   );
 }
-cd C:\Users\sener\bilheteja
+  
+
 
