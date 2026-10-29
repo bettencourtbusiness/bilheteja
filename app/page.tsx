@@ -75,14 +75,28 @@ export default function Home() {
     <main className="min-h-screen overflow-hidden bg-[#F5F8FC] text-[#092748]">
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
         <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-5 py-4 sm:px-8">
-          <a href="#inicio" aria-label="BilheteJá - página inicial" className="flex shrink-0 items-center gap-3">
-            <span className="flex h-11 w-11 items-center justify-center rounded-xl bg-[#092748] text-xl font-black text-[#00C995]">
-              B<span className="text-white">J</span>
-            </span>
-            <span className="text-xl font-extrabold tracking-tight">
-              Bilhete<span className="text-[#00A97E]">Já</span>
-            </span>
-          </a>
+        
+<a
+  href="#inicio"
+  aria-label="BilheteJá - página inicial"
+  className="flex shrink-0 items-center gap-3"
+>
+  <span className="relative flex h-12 w-14 -rotate-6 items-center justify-center rounded-xl bg-gradient-to-r from-[#00C995] to-[#092748] shadow-md shadow-[#092748]/15">
+    <span className="text-xl font-black tracking-tight text-white">
+      BJ
+    </span>
+  </span>
+
+  <span className="flex flex-col">
+    <span className="text-xl font-extrabold tracking-tight sm:text-2xl">
+      Bilhete<span className="text-[#00A97E]">Já</span>
+    </span>
+    <span className="text-[10px] font-semibold tracking-wide text-[#092748] sm:text-xs">
+      Inscreve. Paga. Participa.
+    </span>
+  </span>
+</a>
+
 
           <nav aria-label="Navegação principal" className="hidden items-center gap-7 text-sm font-semibold text-slate-600 md:flex">
             <a className="transition hover:text-[#00A97E]" href="#inicio">Início</a>
