@@ -65,6 +65,12 @@ export default function Home() {
     );
   }
 
+  const botaoPrincipal =
+    "inline-flex items-center justify-center gap-2 rounded-xl !bg-[#092748] px-7 py-4 font-bold !text-white shadow-lg shadow-[#092748]/15 transition duration-200 hover:-translate-y-0.5 hover:!bg-[#00A97E] hover:!text-white focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#BCEFE0]";
+
+  const botaoSecundario =
+    "inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-7 py-4 font-bold text-[#092748] transition duration-200 hover:border-[#00A97E] hover:bg-[#E8F8F3] hover:text-[#087A60] focus-visible:outline-none focus-visible:ring-4 focus-visible:ring-[#BCEFE0]";
+
   return (
     <main className="min-h-screen overflow-hidden bg-[#F5F8FC] text-[#092748]">
       <header className="sticky top-0 z-50 border-b border-slate-200 bg-white/95 backdrop-blur">
@@ -85,7 +91,7 @@ export default function Home() {
             <a className="transition hover:text-[#00A97E]" href="#contacto">Contacto</a>
           </nav>
 
-          <a href="#contacto" className="rounded-xl bg-[#092748] px-4 py-2.5 text-sm font-bold text-white transition hover:bg-[#123D60] sm:px-5">
+          <a href="#contacto" className="rounded-xl !bg-[#092748] px-4 py-2.5 text-sm font-bold !text-white transition hover:!bg-[#00A97E] hover:!text-white sm:px-5">
             Saber mais
           </a>
         </div>
@@ -116,10 +122,11 @@ export default function Home() {
             </p>
 
             <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <a href="#funciona" className="inline-flex items-center justify-center gap-2 rounded-xl bg-[#092748] px-7 py-4 font-bold text-white shadow-lg shadow-[#092748]/15 transition hover:-translate-y-0.5 hover:bg-[#123D60]">
+              <a href="#funciona" className={botaoPrincipal}>
                 Descobrir a plataforma <span aria-hidden="true">→</span>
               </a>
-              <a href="#vantagens" className="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-7 py-4 font-bold text-[#092748] transition hover:border-[#00C995] hover:text-[#087A60]">
+
+              <a href="#vantagens" className={botaoSecundario}>
                 Conhecer vantagens
               </a>
             </div>
